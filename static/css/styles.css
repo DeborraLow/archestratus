@@ -56,7 +56,7 @@ a:hover {
 }
 
 .lead {
-  font-size: 2.75vw;
+  font-size: 2.6vw;
 }
 
 .container { margin-top: 24px; }
@@ -130,41 +130,81 @@ img { max-width: 100%; }
 .form-control {
   border-radius: 0;
   border: 2px solid #886d4b;
-  height: 45px;
   -o-transition:border-color .2s ease-in-out;
   -ms-transition:border-color .2s ease-in-out;
   -moz-transition:border-color .2s ease-in-out;
   -webkit-transition:border-color .2s ease-in-out;
   transition:border-color .2s ease-in-out;
+  text-indent: 36px;
+  font-size: 2.6vw;
+  height: auto;
+  line-height: 2.5em;
+  padding: 0;
+  color: #886d4b;
 }
 
-.form-control:hover {
+.form-control:hover,
+.form-control:focus {
   border-color: #fd4640;
-
+  outline: 0;
 }
 
 .btn-primary {
   width: 100%;
   border-radius: 0;
   line-height: 1.5;
-  font-size: 22px;
+  font-size: 24px;
   background: #886d4b;
   border: none;
+  font-weight: normal;
+  height: auto;
   -o-transition:background-color .2s ease-in-out;
   -ms-transition:background-color .2s ease-in-out;
   -moz-transition:background-color .2s ease-in-out;
   -webkit-transition:background-color .2s ease-in-out;
   transition:background-color .2s ease-in-out;
+  font-size: 2.6vw;
+  padding: 2px;
+  line-height: 2.5em;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-primary:active {
   background: #fd4640;
+}
+
+.arrow {
+  position: absolute;
+  left: 24px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+input[type=email]::-webkit-input-placeholder {
+  color: #886d4b;
+}
+
+input[type=email]:-ms-input-placeholder {
+  color: #886d4b;
+}
+
+input[type=email]::-moz-placeholder {
+  color: #886d4b;
+}
+
+input[type=email]:-moz-placeholder {
+  color:#886d4b;
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1040px;
   }
+
+  .lead, .form-control, .btn-primary {
+    font-size: 34px;
+  }
+
 }
 
 @media screen and (max-width:767px) {
